@@ -17,7 +17,7 @@ let buttons = document.querySelectorAll("button");
 
 let randomIndex = Math.floor(Math.random() * 3);
 let computerChoice = choices[randomIndex];
-console.log("PC: " + computerChoice);
+//console.log("PC: " + computerChoice);
 
 const playerWins = playerChoice => {
     return (
@@ -38,23 +38,23 @@ let play = playerChoice => {
         playerScore++;
         playerScoreDisplay.innerText = playerScore;
         roundMsg.innerHTML = `<b>Player</b> wins: <b>${playerChoice}</b> beats ${computerChoice}`;
-        console.log("Player: " + playerChoice);
-        console.log("Win!");
+        //console.log("Player: " + playerChoice);
+        //console.log("Win!");
     } else if (playerChoice === computerChoice) {
         roundMsg.innerHTML = "It's a <b>Tie!</b>"
-        console.log("Player: " + playerChoice);
-        console.log("Tie!");
+        //console.log("Player: " + playerChoice);
+        //console.log("Tie!");
     } else {
         computerScore++;
         computerScoreDisplay.innerText = computerScore;
         roundMsg.innerHTML = `<b>Computer</b> wins: <b>${computerChoice}</b> beats ${playerChoice}`;
-        console.log("Player: " + playerChoice);
-        console.log("Lose");
+        //console.log("Player: " + playerChoice);
+        //console.log("Lose");
     }
 
     randomIndex = Math.floor(Math.random() * 3);
     computerChoice = choices[randomIndex];
-    console.log("PC: " + computerChoice);
+    //console.log("PC: " + computerChoice);
 
     if (playerScore === 3) {
         winMsg.innerHTML = "<b>Player wins the game!</b>";
