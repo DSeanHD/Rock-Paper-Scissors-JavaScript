@@ -80,3 +80,22 @@ h1 {
     box-shadow: 2px 2px var(--button-shadow);
     transition: 0.3s;
 }
+
+@media screen and (max-width: 500px) {
+    #game-container {
+        margin-top: 50%;
+    }
+
+    #msg {
+        margin-top: 15%;
+    }
+
+    #win-msg {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    #play-again {
+        margin-top: 0;
+    }
+}
