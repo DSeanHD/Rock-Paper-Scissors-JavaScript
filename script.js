@@ -13,8 +13,6 @@ let computerScore = 0;
 playerScoreDisplay.innerText = playerScore;
 computerScoreDisplay.innerText = computerScore;
 
-let buttons = document.querySelectorAll("button");
-
 let randomIndex = Math.floor(Math.random() * 3);
 let computerChoice = choices[randomIndex];
 //console.log("PC: " + computerChoice);
